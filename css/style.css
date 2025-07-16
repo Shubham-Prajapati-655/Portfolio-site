@@ -190,7 +190,7 @@ body.dark-mode .project-item {
   margin: 0 15px 15px;
 }
 
-/*.project-button {
+.project-button {
   display: block;
   margin: 15px;
   padding: 10px;
@@ -200,7 +200,7 @@ body.dark-mode .project-item {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-}*/
+}
 
 .project-button:hover {
   background-color: #E53E3E;
@@ -357,3 +357,93 @@ footer {
     align-items: flex-start;
   }
 }
+
+/* ...existing code... */
+
+/* Add or update these media queries at the end of your CSS file: */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 10px;
+  }
+  section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 5px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact form {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .hero {
+    padding: 20px 2px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  section {
+    padding: 8px;
+    margin: 10px 0;
+  }
+
+  .project-item img,
+  .modal-image {
+    height: 100px;
+  }
+}
+
+/* ...existing code... */
